@@ -128,19 +128,76 @@
 // 	fmt.Println("result:", result)
 // }
 
-package main
-import "fmt"
+// package main
+// import "fmt"
 
-type MyError struct {
-	Code int
-	Message string
-}
+// type MyError struct {
+// 	Code int
+// 	Message string
+// }
 
-func (e MyError) Error() string {
-	return fmt.Sprintf("Error %d: %s", e.Code, e.Message)
-}
+// func (e MyError) Error() string {
+// 	return fmt.Sprintf("Error %d: %s", e.Code, e.Message)
+// }
 
-func main(){
-	err := MyError{ 404, "page not Found"}
-	fmt.Println(err.Error())
-}
+// func main(){
+// 	err := MyError{ 404, "page not Found"}
+// 	fmt.Println(err.Error())
+// }
+
+
+// package main 
+// import "fmt"
+
+// func main(){
+// 	marks := []int{85, 90, 78, 92, 88}
+
+// 	total := 0
+
+// 	for _, mark := range marks {
+// 		total += mark
+// 	}
+// 	fmt.Println("Total marks:", total)
+// }
+
+// package main 
+// import "fmt"
+
+// func main(){
+// 	marks := []int{85, 90, 78, 92, 88}
+// 	total := 0
+
+// 	for _, mark := range marks {
+// 		total += mark
+// 	}
+// 	average := total /len(marks)
+// 	fmt.Println("Average marks:", average)
+// 	fmt.Println("Total marks:", total)
+// }
+
+
+// package main
+// import "fmt"
+
+// func main(){
+// 	var n int 
+// 		fmt.Println("Enter a number of subjects:")
+// 		fmt.Scan(&n)
+
+// 		marks := make([]int, n)
+// 		for i := 0; i<n; i++ {
+// 			fmt.Printf("Enter mark %d: ", i+1)
+// 			fmt.Scan(&marks[i])
+// 		}
+
+// 		total := 0
+// 		for _, mark := range marks {
+// 			total += mark
+// 		}
+
+// 		average := total / n
+// 		fmt.Println("Total marks:", total)
+// 		fmt.Println("Average marks:", average)
+// 	}
+
+
