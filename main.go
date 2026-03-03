@@ -200,17 +200,87 @@
 // 		fmt.Println("Average marks:", average)
 // 	}
 
+// package main
+// import "fmt"
+
+// func sum(numbers ...int) int {
+// 	total := 0
+// 	for _, num := range numbers {
+// 		total += num
+// 	}
+// 	return total
+// }
+// func main(){
+// 	fmt.Println(sum(10,20))
+// 	fmt.Println(sum(1,2,3,4,5))
+// }
+
+// package main 
+// import "fmt"
+
+// func test(nums ...int){
+// 	fmt.Println(len(nums))
+// }
+// func main(){
+// 	test(1,2,3)
+// }
+
+
+// package main 
+// import "fmt"
+
+// func addUser(users []string , name string) []string {
+// 	return append(users, name)
+// }
+
+// func getUser(users []string, index int) string{
+// 	if index>=0 && index<len(users){
+// 		return users[index]
+// 	}
+// 	return "invalid index"
+// }
+
+// func deleteUser(users []string, index int) []string{
+// 	if index>=0 && index<len(users){
+// 		return append(users[:index], users[index+1:]...)
+// 	}
+// 	return users
+// }
+
+// func userExists(users []string, name string) bool {
+// 	for _, user := range users {
+// 		if user == name {
+// 			return true
+// 		}
+// 	}
+// 	return false
+// }
+
+// func main(){
+// 	users := []string{"prasanna", "kumar", "reddy"}
+
+// 	//insert a user
+// 	users = addUser(users, "sai")
+// 	fmt.Println("Users after adding:", users)
+
+// 	fmt.Println("User at index 1:", getUser(users, 1))
+
+// 	// Exists
+// 	fmt.Println("Does Bob exist?", userExists(users, "Bob"))
+
+// 	// Delete
+// 	users = deleteUser(users, 0)
+// 	fmt.Println("After Delete:", users)
+// }
+
+
 package main
 import "fmt"
 
-func sum(numbers ...int) int {
-	total := 0
-	for _, num := range numbers {
-		total += num
-	}
-	return total
-}
+arr1 := [5]int{1, 2, 3, 4, 5}
+
 func main(){
-	fmt.Println(sum(10,20))
-	fmt.Println(sum(1,2,3,4,5))
+	fmt.Println("Array:", arr1)
+	fmt.Println("Length of array:", len(arr1))
+	fmt.Println("Element at index 2:", arr1[2])
 }
