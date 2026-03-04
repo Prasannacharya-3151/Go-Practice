@@ -282,5 +282,5 @@ arr1 := [5]int{1, 2, 3, 4, 5}
 func main(){
 	fmt.Println("Array:", arr1)
 	fmt.Println("Length of array:", len(arr1))
-	fmt.Println("Element at index 2:", arr1[2])
+	fmt.Println("Element at index 5:", arr1[2])
 }
