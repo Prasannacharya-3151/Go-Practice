@@ -1,5 +1,4 @@
-package main
-import "fmt"
+package basics
 
 func main(){
 	// pascalcase
