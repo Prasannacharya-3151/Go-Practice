@@ -1,4 +1,4 @@
-package basic
+package basics
 import "fmt"
 
 const pi = 3.14
