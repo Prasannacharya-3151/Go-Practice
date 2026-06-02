@@ -15,6 +15,7 @@ func main() {
 	name := "world"
 	fmt.Println(greeting + "" + name)
 
-	str1 := "Apple"
-	
+	//string interption
+	greeting2 := fmt.Sprintf("%s %s", greeting, name)
+	fmt.Println(greeting2)
 }
