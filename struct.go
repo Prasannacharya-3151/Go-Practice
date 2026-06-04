@@ -44,6 +44,12 @@ func main() {
 	
 	circle := Circle{Radius: 5}
 	fmt.Println("Circle area:", circle.Area())
+
+	counter := Counter{Value: 0 }
+	counter.Increment()
+	fmt.Println("Counter value after increment:", counter.Value)
+	counter.Decrement()
+	fmt.Println("Counter value after decrement:", counter.Value)
 }
 
     //structs with methods
@@ -52,6 +58,19 @@ func main() {
 	}
 	func (c Circle) Area() float64 {
 		return 3.14 * c.Radius * c.Radius
+	}
+
+	//pointer receiver example
+	type Counter struct {
+		Value int
+	}
+
+	func (c *Counter) Increment() {
+		c.Value++
+	}
+
+	func (c *Counter) Decrement() {
+		c.Value--
 	}
     
 		
