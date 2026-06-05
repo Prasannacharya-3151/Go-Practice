@@ -1,4 +1,4 @@
-package main
+package intermediate
 import "fmt"
 
 //custom errors in Go are created by defining a new type that implements the error interface.
