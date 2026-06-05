@@ -1,4 +1,4 @@
-package main
+package intermediate
 
 import "fmt"
 
@@ -15,4 +15,7 @@ func main() {
 	printValue(100)
 	printValue("Hello")
 	printValue(true)
+
+	printSlice([]int{1, 2, 3})
+	printSlice([]string{"Go", "Java", "Python"})
 }
