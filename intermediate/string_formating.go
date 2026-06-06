@@ -1,4 +1,4 @@
-package main
+package intermediate
 import "fmt"
 
 //string formating in Go can be done sting concatenation, using the fmt.sprintf fucntion, or using the fmt.Printf function. Here are some examples of string formating in Go:
