@@ -22,7 +22,7 @@
 // 	fmt.Println("File Written successfully")
 // }
 
-package main
+package intermediate
 import (
 	"fmt"
 	"time"
