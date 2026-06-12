@@ -30,7 +30,7 @@ func main() {
 		return
 	}
 
-	fmt.Println("\nRalative path:")
+	fmt.Println("\nAbsolute path:")
 	fmt.Println(absolutePath)
 
 	//build path using a filepath.Join()
