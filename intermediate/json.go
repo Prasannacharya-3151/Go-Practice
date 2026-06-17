@@ -1,4 +1,4 @@
-package main
+package intermediate
 import (
 	"encoding/json"
 	"fmt"
@@ -11,7 +11,7 @@ type Person struct { //go struct foramte
 }
 
 func main() {
-
+	//The encoding/json package is used to convert Go structs into JSON using Marshal() and convert JSON data into Go structs using Unmarshal().
 	//struct
 	person := Person{ //go struct
 		Name: "Prasanna",
